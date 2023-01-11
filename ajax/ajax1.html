@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetching JSON-DATA </title>
+</head>
+<body>
+    <button id="btn1">get user</button> 
+    <br>
+    <br>
+    <button id="btn2">get users</button>
+    <br>
+    <br>
+    <h1>User</h1>
+    <div id="user"></div>
+    <h1>Users</h1>
+    <div id="users"></div>
+
+    <script>
+        document.getElementById('btn1').addEventListener
+        ('click',loadUser)
+        function loadUser(){
+            var xhr = new XMLHttpRequest()
+            xhr.open("GET",'user.json',true)
+            xhr.onload= function(){
+                if (this.status = 200){
+                    var user = JSON.parse(this.responseText)
+                    // console.log(user.name)
+                    var output = ''
+                    output += '<ul>'+
+                        '<li>'+ user.id + '</li>'+
+                        '<li>'+ user.name + '</li>'+
+                        '<li>'+ user.email + '</li>'+
+                        '</ul>';
+                        document.getElementById('user').innerHTML=output
+                }
+            }
+            xhr.send()
+        }
+
+        //for users.json
+        document.getElementById('btn2').addEventListener
+        ('click',loadUsers)
+        function loadUsers(){
+            var xhr = new XMLHttpRequest()
+            xhr.open("GET",'users.json',true)
+            xhr.onload= function(){
+                if (this.status = 200){
+                    var users = JSON.parse(this.responseText)
+                    // console.log(user.name)
+                    var output = ''
+                    for (var i in users){
+                    output += '<ul>'+
+                        '<li>'+ users[i].id + '</li>'+
+                        '<li>'+ users[i].name + '</li>'+
+                        '<li>'+ users[i].email + '</li>'+
+                        '</ul>';
+                    }
+                        document.getElementById('users').innerHTML=output
+                }
+            }
+            xhr.send()
+        }
+
+    
+
+        
+    </script>
+    
+</body>
+</html>

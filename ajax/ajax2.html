@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetching JSON-DATA </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <h1>All git api datas</h1>
+    <button id="btn2">show all datas</button>
+    <br> <br>
+    <div id="users"></div>
+
+
+    <script>
+           document.getElementById('btn2').addEventListener
+        ('click',loadUsers)
+        function loadUsers(){
+            var xhr = new XMLHttpRequest()
+            xhr.open("GET",'https://api.github.com/users',true)
+            xhr.onload= function(){
+                if (this.status = 200){
+                    var users = JSON.parse(this.responseText)
+                    // console.log(user.name)
+                    var output = ''
+                    for (var i in users){
+                    output += '<div class="allUsers">'+
+                        '<img src="'+ users[i].avatar_url+'" width="70" height="70"  >'+
+                        '<ul>'+
+                        '<li> ID : '+ users[i].id + '</li>'+
+                        '<li> Login : '+ users[i].login + '</li>'+
+                        '<li> organization :'+ users[i].organizations_url + '</li>'+
+                        '</ul>' + '</div>'; 
+                    }
+                        document.getElementById('users').innerHTML=output
+                }
+            }
+            xhr.send()
+        }
+
+    </script>
+    
+</body>
+</html>

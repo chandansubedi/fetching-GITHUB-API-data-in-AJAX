@@ -1,0 +1,10 @@
+.allUsers{
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.allUsers ul 
+{
+    list-style: none;
+}

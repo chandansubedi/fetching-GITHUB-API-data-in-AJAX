@@ -1,0 +1,124 @@
+{
+    "playlist": [
+        {
+            "id": 1,
+            "artist": "Lil Nas X",
+            "song": "Montero (call me by your name)",
+            "genre": "hiphop"
+        },
+        {
+            "id": 2,
+            "artist": "Masked Wolf",
+            "song": "Astronaut In The Ocean",
+            "genre": "hiphop"
+        },
+        {
+            "id": 3,
+            "artist": "Cardi B",
+            "song": "Up",
+            "genre": "hiphop"
+        },
+        {
+            "id": 4,
+            "artist": "Megan Thee Stallion",
+            "song": "Thot Shit",
+            "genre": "hiphop"
+        },
+        {
+            "id": 5,
+            "artist": "Young MC",
+            "song": "Bust a Move",
+            "genre": "hiphop"
+        },
+        {
+            "id": 6,
+            "artist": "BTS",
+            "song": "Butter",
+            "genre": "pop"
+        },
+        {
+            "id": 7,
+            "artist": "Ariana Grande",
+            "song": "POV",
+            "genre": "pop"
+        },
+        {
+            "id": 8,
+            "artist": "Justin Bieber",
+            "song": "Peaches",
+            "genre": "pop"
+        },
+        {
+            "id": 9,
+            "artist": "Kelsea Ballerini & LANY",
+            "song": "I Quit Drinking",
+            "genre": "pop",
+            "like": 0
+        },
+        {
+            "id": 10,
+            "artist": "Maroon 5",
+            "song": "Lost",
+            "genre": "pop"
+        },
+        {
+            "id": 11,
+            "artist": "Silk Sonic",
+            "song": "Leave the door open",
+            "genre": "rnb"
+        },
+        {
+            "id": 12,
+            "artist": "The Weeknd & Ariana Grande",
+            "song": "Save Your Tears",
+            "genre": "rnb"
+        },
+        {
+            "id": 13,
+            "artist": "Olivia Rodrigo",
+            "song": "Butter",
+            "genre": "rnb"
+        },
+        {
+            "id": 14,
+            "artist": "Jon Batiste",
+            "song": "Freedom",
+            "genre": "rnb"
+        },
+        {
+            "id": 15,
+            "artist": "Usher feat. Juicy J",
+            "song": "I Don't Mind ",
+            "genre": "rnb"
+        },
+        {
+            "id": 16,
+            "artist": "Miles Davis",
+            "song": "So what",
+            "genre": "jazz"
+        },
+        {"id": 17,
+            "artist": "Duke Ellington & His Famous Orchestra",
+            "song": "Mood Indigo",
+            "genre": "jazz"
+        },
+        {
+            "id": 18,
+            "artist": "Stan Getz & Joao Gilberto",
+            "song": "The Girl From Ipanema",
+            "genre": "jazz"
+        },
+        {"id": 19,
+            "artist": "Nina Simone",
+            "song": "My Baby Just Cares For Me",
+            "genre": "jazz"
+        },
+        {
+            "id": 20,
+            "artist": "Thelonious Monk",
+            "song": "Round Midnight",
+            "genre": "jazz"
+        }
+
+    ]
+}
